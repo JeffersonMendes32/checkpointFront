@@ -263,22 +263,10 @@ nav.menu-nobile:active {
 }
 .card1 ,.card2 , .card3 {
     width: 80%;
+    color: forestgreen;
 } 
-.overlayCard{
-    position: absolute;
-     width: 100%; 
-     height: 100%; 
-     background-color: rgba(0, 0, 0, 0); 
-     transition: all 0.250s ease-in-out; 
-     z-index: 9; 
-}
-.card1:hover p {
-    display: block;
-    animation: 2s anim-lineUp ease-in-out;
-    color: rgba(169, 169, 169, 0.89);
-}
-.card1:hover h2{
-    animation: 2s anim-lineUp ease-out;
-}
+.card1 ,.card2 , .card3 h2 {
+    color: forestgreen;
+} 
 
 }
