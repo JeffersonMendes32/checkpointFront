@@ -215,6 +215,22 @@ nav.navbar{
     transform: scale(1.4);
     transition: 0.5s;
 }
+@keyframes anim-lineUp { 
+    0% { opacity: 0; 
+        transform: translateY(80%); } 
+        20% { 
+            opacity: 0; } 
+        50% { 
+            opacity: 1; 
+            transform: translateY(0%); } 
+            
+        100% { 
+        opacity: 1;
+        transform: translateY(0%); 
+                } 
+            } .card:hover .overlayCard { 
+                background-color: rgba(0, 0, 0, 0.5);
+             }
 
 @media screen and  (max-width:830px) {
 .titulo-site h1 {
@@ -226,8 +242,9 @@ nav.menu-mobile  {
     flex-direction: column-reverse;
     display: block;
     
-
-   
+}
+nav.menu-nobile:active {
+    opacity: 0.6;
 }
 
 .itens-nav{
@@ -242,6 +259,26 @@ nav.menu-mobile  {
     justify-content: center;
     align-items: center;
     width: 100%;
+
+}
+.card1 ,.card2 , .card3 {
+    width: 80%;
+} 
+.overlayCard{
+    position: absolute;
+     width: 100%; 
+     height: 100%; 
+     background-color: rgba(0, 0, 0, 0); 
+     transition: all 0.250s ease-in-out; 
+     z-index: 9; 
+}
+.card1:hover p {
+    display: block;
+    animation: 2s anim-lineUp ease-in-out;
+    color: rgba(169, 169, 169, 0.89);
+}
+.card1:hover h2{
+    animation: 2s anim-lineUp ease-out;
 }
 
 }
